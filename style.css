@@ -540,15 +540,7 @@ svg circle:nth-child(2)
     rgb(23, 22, 22) 50%,   rgb(20, 19, 19) 100%);
     border-radius: 5px;
 }
-.servies-box-1:hover{
-    width: 27%;
-    height: 73vh;
-    transition: 1s;
-    background: linear-gradient(to right , #1b1b1b 0%, #1b1b1b 50%,
-    rgb(23, 22, 22) 50%,   rgb(20, 19, 19) 100%);
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 .servies-img{
     width: 100%;
     height: 40%;
@@ -557,11 +549,28 @@ svg circle:nth-child(2)
     align-items: center;
 }
 .image{
-    width: 45%;
-    height: 75%;
-    background-color: chartreuse;
+    width: 40%;
+    height: 70%;
     border-radius: 100%;
 
+}
+.image1{
+    background-image: url(./img/skills1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+.image2{
+    background-image: url(./img/skills2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+.image3{
+    background-image: url(./img/skills3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+        
 }
 .servies-heading{
     width: 100%;
@@ -586,4 +595,14 @@ svg circle:nth-child(2)
     letter-spacing: 1px;
     color:#777;
 
+}
+.servies-box-1:hover{
+    width: 26%;
+    height: 71vh;
+    transition: 1s;
+    background: linear-gradient(to right , #1b1b1b 0%, #1b1b1b 50%,
+    rgb(23, 22, 22) 50%,   rgb(20, 19, 19) 100%);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
 }

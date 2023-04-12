@@ -540,7 +540,16 @@ svg circle:nth-child(2)
     rgb(23, 22, 22) 50%,   rgb(20, 19, 19) 100%);
     border-radius: 5px;
 }
-
+.servies-box-1:hover{
+    width: 26%;
+    height: 71vh;
+    transition: 1s;
+    background: linear-gradient(to right , #1b1b1b 0%, #1b1b1b 50%,
+    rgb(23, 22, 22) 50%,   rgb(20, 19, 19) 100%);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
 .servies-img{
     width: 100%;
     height: 40%;
@@ -596,13 +605,31 @@ svg circle:nth-child(2)
     color:#777;
 
 }
-.servies-box-1:hover{
-    width: 26%;
-    height: 71vh;
-    transition: 1s;
-    background: linear-gradient(to right , #1b1b1b 0%, #1b1b1b 50%,
-    rgb(23, 22, 22) 50%,   rgb(20, 19, 19) 100%);
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
+
+
+/* =================================================================================================================== */
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+.contact-container{
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links{
+    width: 30%;
+    height: 80vh;
+    background-color: rgb(14, 59, 97);
+}
+.form{
+    width: 60%;
+    height: 80vh;
+    background-color: aliceblue;    
 }

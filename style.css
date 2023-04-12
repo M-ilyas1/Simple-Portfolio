@@ -558,8 +558,8 @@ svg circle:nth-child(2)
     align-items: center;
 }
 .image{
-    width: 40%;
-    height: 70%;
+    width: 35%;
+    height: 60%;
     border-radius: 100%;
 
 }
@@ -594,12 +594,12 @@ svg circle:nth-child(2)
 
 }
 .servies-heading h1{
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'pacific', cursive;
     color: white;
 }
 .servies-para p{
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
     letter-spacing: 1px;
     color:#777;
@@ -615,12 +615,12 @@ svg circle:nth-child(2)
     background-color: aqua;
 }
 .contact-container{
-    width: 90%;
+    width: 80%;
     height: 80vh;
     margin: 0 auto;
     background-color: darkgoldenrod;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .social-links{

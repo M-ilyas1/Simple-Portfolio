@@ -78,7 +78,6 @@
     .header-menu ul li{
         padding: 20px;
         font-family: 'pacific', cursive;
-        
         font-weight: bold;
     
     }
@@ -536,11 +535,11 @@ svg circle:nth-child(2)
 .servies-box-1{
     width: 25%;
     height: 70vh;
-    background: linear-gradient(to right , #1b1b1b 0%, #1b1b1b 50%,
-    rgb(23, 22, 22) 50%,   rgb(20, 19, 19) 100%);
+    background: linear-gradient(to right , #222 0%, #222 50%,
+    rgb(29,29,29) 50%,   rgb(23, 22, 22) 100%);
     border-radius: 5px;
 }
-.servies-box-1:hover{
+/* .servies-box-1:hover{
     width: 26%;
     height: 71vh;
     transition: 1s;
@@ -549,7 +548,7 @@ svg circle:nth-child(2)
     border-radius: 5px;
     cursor: pointer;
     color: white;
-}
+} */
 .servies-img{
     width: 100%;
     height: 40%;
@@ -594,7 +593,7 @@ svg circle:nth-child(2)
 
 }
 .servies-heading h1{
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'pacific', cursive;
     color: white;
 }
@@ -612,24 +611,99 @@ svg circle:nth-child(2)
 #contact{
     width: 100%;
     height: 100vh;
-    background-color: aqua;
 }
 .contact-container{
     width: 80%;
     height: 80vh;
     margin: 0 auto;
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
-.social-links{
-    width: 30%;
+.image-div{
+    width: 35%;
     height: 80vh;
-    background-color: rgb(14, 37, 57);
+    background-image: url(./img/1.png);
+    background-size: 100% 100%;
+}
+.form-div{
+    width: 50%;
+    height: 80vh;    
 }
 .form{
-    width: 60%;
+    width: 90%;
     height: 80vh;
-    background-color: rgb(137, 175, 208);    
+    margin: 0 auto;
+    /* background-color: rgb(222, 206, 206); */
+}
+.form h1{
+    padding-top: 10px;
+    font-family: 'pacific', cursive;
+
+}
+form label{
+    font-size: 20px;
+    color: grey;
+    padding-top: 10px;
+}
+form input{
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgb(87, 85, 85);
+    /* background-color: transparent; */
+}
+form textarea{
+    width: 80%;
+    height: 15vh;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgb(87, 85, 85);
+}
+.btn{
+    width: 80%;
+    background-color: orangered;
+    border: 3px solid orangered;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.btn:hover{
+    width: 80%;
+    background-color: white;
+    color: orangered;
+    border: 3px solid orangered;
+    outline: none;
+    padding: 15px;
+    margin-top: 10px;
+    transition: 0.5s;
+
+}
+
+
+
+/* =============================================================================================================== */
+
+
+footer{
+    width: 100%;
+    height: 40vh;
+    background-image: url(./img/pattern.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div1{
+    width: 40%;
+    height: 30vh;
+    background-color: #222;
 }

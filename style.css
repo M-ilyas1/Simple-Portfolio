@@ -1741,3 +1741,27 @@ footer{
     }
 }
 
+@media (max-width: 300px){
+    footer{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-div1{
+        width: 90%;
+        height: 30vh;
+        /* background-color: #222; */
+    }
+    .footer-div1 h1{
+        font-size: 15px;
+        font-family: 'pacific', cursive;
+    }
+    .footer-div1 p span{
+        color: orangered;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+}

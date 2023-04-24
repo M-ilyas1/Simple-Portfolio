@@ -2,42 +2,14 @@
     margin: 0%;
     padding: 0%;
 }
-/* #progress{
-    background-color: orangered;
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-    height: 70px;
-    width: 70px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-#progress-value{
-    display: block;
-    height: calc(100% - 15px);
-    width: calc(100% - 10px);
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-size: 28px;
-    color: #001a2e;
-
-} */
 .head{
     width: 100%;
     height: 20vh;
-    /* background-color: orangered; */
     display: flex;
 }
 .header-menu{
-    width: 50%;
+    width:45%;
     height: 10vh;
-    /* background-color: orangered; */
-    /* background-image: url(./img/pattern.png); */
 
 }
 .header-menu ul{
@@ -47,8 +19,8 @@
 .header-menu ul li{
     padding-top: 20px;
     padding-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+
 
 }
 .header-menu ul li a{
@@ -57,28 +29,25 @@
     color: black;
 }
 .header-menu ul li a:hover{
-    /* text-decoration: none; */
     color: gray;
 }
 .header-logo{
-    width: 5%;
-    height: 10vh;
-    background-image: url(./img/image.png);
+    width: 10%;
+    height: 18vh;
+    background-image: url(./img/developer.png);
     background-size: 100% 100%;
-    margin-top: 10px;
 }
 
 .header-icons{
     width: 45%;
     height: 10vh;
-    /* background-color: gainsboro; */
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 a{
-    color: black;
+    color: rgb(84, 82, 82);
     padding: 10px;
 }
 a i{
@@ -90,6 +59,55 @@ a i:hover{
 }
 
 
+@media (max-width: 900px){
+    .head{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+    }
+    .header-menu{
+        width: 100%;
+        height: 10vh;
+    }
+    .header-menu ul{
+        list-style: none;
+        display: flex;
+    }
+    .header-menu ul li{
+        padding: 14px;
+        font-family:'Times New Roman', Times, serif;    
+    }
+    .header-menu ul li a{
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+    }
+    .header-menu ul li a:hover{
+        color: orangered;
+    }
+    .header-logo{
+        display: none;
+    }
+    .header-icons{
+        width: 50%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .header-icons a{
+        color: black;
+        padding: 10px;
+    }
+    .header-icons a i{
+        font-size: 25px;
+    }
+    .header-icons a i:hover{
+        font-size: 27px;
+        color: orangered;
+    }
+}
 
 @media (max-width:600px) {
     .head{
@@ -163,22 +181,45 @@ a i:hover{
 .heading-box{
     width: 50%;
     height: 30vh;
-    /* background-color: aquamarine; */
     text-align: center;
 }
 .heading-box h1{
     padding-top: 30px;
-    font-size: 40px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: rgb(77, 75, 75);
     /* text-shadow: 2px 2px 1px #000; */
 }
-/* span{
+span{
     color: orangered;
     padding-top: 30px;
     font-size: 40px;
-    font-family: 'pacific', cursive;
-    text-shadow: 2px 2px 1px #000;
-} */
+    font-family:'Times New Roman', Times, serif;
+}
+
+@media (max-width: 900px){
+    #heading-container{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading-box{
+        width: 60%;
+        height: 30vh;
+        text-align: center;
+
+    }
+    .heading-box h1{
+        padding-top: 50px;
+        font-size: 30px;
+    }
+    .heading-box h1 span{
+        padding-top: 10px;
+        font-size: 40px;
+    }
+}
 
 @media (max-width:600px){
     #heading-container{
@@ -199,8 +240,6 @@ a i:hover{
     .heading-box h1{
         padding-top: 50px;
         font-size: 30px;
-        font-family: 'pacific', cursive;
-        /* text-shadow: 2px 2px 1px #000; */
     }
     .heading-box h1 span{
         padding-top: 10px;
@@ -238,7 +277,7 @@ a i:hover{
     /* background-color: azure; */
 }
 .content-left h5{
-    color: rgb(87, 85, 85);
+    color: rgb(150, 142, 142);
     letter-spacing: 2px;
     font-size: 15px;
     padding: 10px;
@@ -246,10 +285,10 @@ a i:hover{
 .content-left p{
     /* font-size: 15px; */
     font-weight: bold;
-    font-family: 'pacific', cursive;
+    color: rgb(87, 84, 84);
     font-size: 17px;
-
     padding: 10px;
+    font-family:'Times New Roman', Times, serif;
 }
 .box2{
     width: 40%;
@@ -299,20 +338,96 @@ a i:hover{
     /* background-color: azure; */
 }
 .content-right h5{
-    color: rgb(87, 85, 85);
+    color: rgb(150, 142, 142);
     font-size: 15px;
     letter-spacing: 2px;
     padding: 10px;
     text-align: right;
 }
 .content-right p{
+    color: rgb(87, 84, 84);
     padding-right: 10px;
     font-size: 40px;
-    font-family: 'pacific', cursive;
     text-align: right;
+    font-family:'Times New Roman', Times, serif;
+
 
 }
 
+@media (max-width: 900px){
+    #about-us{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box1{
+        width: 30%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box1-1{
+        width: 70%;
+        height: 90%;
+    }
+    .content-left{
+        width: 100%;
+        height: 30%;
+        text-align: left;
+        margin-top: 15px;
+    }
+    .content-left h5{
+        letter-spacing: 2px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .content-left p{
+        font-weight: bold;
+        font-size: 17px;
+        color: rgb(112, 109, 109);
+        padding: 10px;
+    }
+    .box2{
+        width: 35%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box3{
+        width: 30%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box3-1{
+        width: 70%;
+        height: 90%;
+    }
+    .content-right{
+        width: 100%;
+        float: left;
+        height: 22%;
+        margin-top: 15px;
+        text-align: right;
+
+    }
+    .content-right h5{
+        font-size: 15px;
+        letter-spacing: 2px;
+        padding: 10px;
+    }
+    .content-right p{
+        padding-right: 10px;
+        font-size: 40px;
+        color: rgb(87, 84, 84);
+
+    }
+}
 
 @media (max-width:600px){
     #about-us{
@@ -340,7 +455,7 @@ a i:hover{
         margin-top: 15px;
     }
     .content-left h5{
-        color: rgb(87, 85, 85);
+        /* color: rgb(87, 85, 85); */
         letter-spacing: 2px;
         font-size: 15px;
         padding: 10px;
@@ -395,29 +510,27 @@ a i:hover{
 }
 
 
+
+
 /* ========================================================================================================================= */
 
 
 #Skills{
     width: 100%;
-    height: 100vh;
-    /* background-image: url(./img/HD\ \(2\).jpg);
-    background-size: cover; */
-    
+    height: 100vh;    
 }
 .skills-heading{
     width: 80%;
     height: 15vh;
-    /* background-color: rgb(12, 75, 54); */
     margin: 0% auto;
 }
 .skills-heading h1{
     text-align: center;
     padding-top: 30px;
-    font-size: 40px;
-    /* color: white; */
-    font-family: 'pacific', cursive;
-    /* text-shadow: 2px 2px 1px #000; */
+    font-size: 50px;
+    color: rgb(77, 75, 75);
+    font-family:'Times New Roman', Times, serif;
+
 }
 .skills-bars{
     width: 80%;
@@ -433,12 +546,13 @@ a i:hover{
   width:900px;
   display:flex;
   justify-content:space-around;
+  align-items: center;
 }
 .container .card
 {
   width: 350px;
   background:linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
-  /* display:flex; */
+  display:flex;
   justify-content:center;
   align-items:center;
   height: 400px;
@@ -549,14 +663,162 @@ svg circle:nth-child(2)
 {
   stroke-dashoffset:calc(440 - (440 * 90) / 100);
   stroke: orangered;
+
 }
 
+@media (max-width: 900px){
+    #Skills{
+        width: 100%;
+        height: 105vh;
+    }
+    .skills-heading{
+        width: 90%;
+        height: 15vh;
+        margin: 0% auto;
+    }
+    .skills-heading h1{
+        text-align: center;
+        padding-top: 30px;
+        font-size: 40px;
+        font-family:'Times New Roman', Times, serif;
 
+    }
+    .skills-bars{
+        width: 100%;
+        height: 90vh;
+        margin: 0% auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container
+    {
+      width: 35%;
+      display:flex;
+      justify-content:space-around;
+      margin-top: 10px;
+    }
+    .container .card
+    {
+      width: 100%;
+      height: 400px;
+      background:linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+      justify-content:center;
+      align-items:center;
+      border-radius:4px;
+      text-align:center;
+      overflow:hidden;
+      transition:0.5s;
+    }
+    .container .card:hover
+    {
+      transform:translateY(-10px);
+      box-shadow:0 15px 35px rgba(0,0,0,.5);
+    }
+    .container .card:before
+    {
+      content:'';
+      position:absolute;
+      top:0;
+      left:-50%;
+      width:100%;
+      height:100%;
+      background:rgba(255,255,255,.03);
+      pointer-events:none;
+      z-index:1;
+    }
+    .percent
+    {
+      position:relative;
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      box-shadow: inset 0 0 50px #000;
+      background:#222;
+      z-index:1000;
+    }
+    .percent .num
+    {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      border-radius:50%;
+    }
+    .percent .num h2
+    {
+      color:#777;
+      font-weight:700;
+      font-size:40px;
+      transition:0.5s;
+    }
+    .card:hover .percent .num h2
+    {
+      color:#fff;
+      font-size:60px;
+    }
+    .percent .num h2 span
+    {
+      color:#777;
+      font-size:24px;
+      transition:0.5s;
+    }
+    .card:hover .percent .num h2 span
+    {
+      color:#fff;
+    }
+    .text
+    {
+      position:relative;
+      color:#777;
+      margin-top:20px;
+      font-weight:700;
+      font-size:18px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      transition:0.5s;
+    }
+    .card:hover .text
+    {
+      color:#fff;
+    }
+    svg
+    {
+      position:relative;
+      width:150px;
+      height:150px;
+      z-index:1000;
+    }
+    svg circle
+    {
+      width:100%;
+      height:100%;
+      fill:none;
+      stroke:#191919;
+      stroke-width:10;
+      stroke-linecap:round;
+      transform:translate(5px,5px);
+    }
+    svg circle:nth-child(2)
+    {
+      stroke-dasharray:440;
+      stroke-dashoffset:440;
+    }
+    .card:nth-child(1) svg circle:nth-child(2)
+    {
+      stroke-dashoffset:calc(440 - (440 * 90) / 100);
+      stroke: orangered;
+    }
+}
 
 @media (max-width:600px){
     #Skills{
         width: 100%;
-        height: 200vh;
+        height: 220vh;
         /* background-image: url(./img/pattern.png); */
         /* background-size: cover; */
         
@@ -571,14 +833,13 @@ svg circle:nth-child(2)
         text-align: center;
         padding-top: 30px;
         font-size: 40px;
-        font-family: 'pacific', cursive;
-        /* text-shadow: 2px 2px 1px #000; */
+        font-family:'Times New Roman', Times, serif;
+
     }
     .skills-bars{
         width: 90%;
-        height: 180vh;
+        height: 200vh;
         margin: 0% auto;
-        /* background-color: aquamarine; */
         flex-direction:column;
         justify-content: space-between;
         align-items: center;
@@ -588,6 +849,7 @@ svg circle:nth-child(2)
       width: 90%;
       display:flex;
       justify-content:space-around;
+      margin-top: 10px;
     }
     .container .card
     {
@@ -710,13 +972,12 @@ svg circle:nth-child(2)
 
 
 
+
 /* ================================================================================================================================0 */
 
 #Servies{
     width: 100%;
     height: 100vh;
-    /* background-color: rgb(19, 63, 63); */
-    /* background-image: url(./img/pattern.png); */
 }
 .Servies-container{
     width: 90%;
@@ -733,16 +994,6 @@ svg circle:nth-child(2)
     rgb(29,29,29) 50%,   rgb(23, 22, 22) 100%);
     border-radius: 10px;
 }
-/* .servies-box-1:hover{
-    width: 26%;
-    height: 71vh;
-    transition: 1s;
-    background: linear-gradient(to right , #1b1b1b 0%, #1b1b1b 50%,
-    rgb(23, 22, 22) 50%,   rgb(20, 19, 19) 100%);
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-} */
 .servies-img{
     width: 100%;
     height: 40%;
@@ -788,7 +1039,7 @@ svg circle:nth-child(2)
 }
 .servies-heading h1{
     font-size: 30px;
-    font-family: 'pacific', cursive;
+    font-family:'Times New Roman', Times, serif;
     color: white;
 }
 .servies-para p{
@@ -798,22 +1049,93 @@ svg circle:nth-child(2)
     color:#777;
 
 }
-
+@media (max-width: 900px){
+    #Servies{
+        width: 100%;
+        height: 110vh;
+    }
+    .Servies-container{
+        width: 100%;
+        height: 90vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .servies-box-1{
+        width: 30%;
+        height: 70vh;
+        background: linear-gradient(to right , #222 0%, #222 50%,
+        rgb(29,29,29) 50%,   rgb(23, 22, 22) 100%);
+        border-radius: 10px;
+    }
+    .servies-img{
+        width: 100%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image{
+        width: 35%;
+        height: 60%;
+        border-radius: 100%;
+    
+    }
+    .image1{
+        background-image: url(./img/skills1.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+    }
+    .image2{
+        background-image: url(./img/skills2.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+    }
+    .image3{
+        background-image: url(./img/skills3.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+            
+    }
+    .servies-heading{
+        width: 100%;
+        height: 10%;
+        text-align: center;
+    }
+    .servies-para{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        padding: 5px;
+    
+    }
+    .servies-heading h1{
+        font-size: 23px;
+        font-family:'Times New Roman', Times, serif;
+        color: white;
+    }
+    .servies-para p{
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        color:#777;
+    
+    }
+}
 
 @media (max-width:600px){
     #Servies{
         width: 100%;
         height: 260vh;
-        /* background-color: rgb(19, 63, 63); */
-        /* background-image: url(./img/pattern.png); */
     }
     .Servies-container{
         width: 90%;
         height: 240vh;
         margin: 0 auto;
         flex-direction: column;
-        /* background-color: rgb(3, 48, 48); */
-
         justify-content: space-around;
         align-items: center;
     }
@@ -838,7 +1160,7 @@ svg circle:nth-child(2)
     
     }
     .image1{
-        background-image: url(./img/skills1.jpg);
+        background-image: url(./img/skills1.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         
@@ -869,7 +1191,7 @@ svg circle:nth-child(2)
     }
     .servies-heading h1{
         font-size: 25px;
-        font-family: 'pacific', cursive;
+        font-family:'Times New Roman', Times, serif;
         color: white;
     }
     .servies-para p{
@@ -918,7 +1240,8 @@ svg circle:nth-child(2)
 }
 .form h1{
     padding-top: 10px;
-    font-family: 'pacific', cursive;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
 
 }
 form label{
@@ -933,7 +1256,6 @@ form input{
     outline: none;
     border: none;
     border-bottom: 3px solid rgb(87, 85, 85);
-    /* background-color: transparent; */
 }
 form textarea{
     width: 80%;
@@ -967,46 +1289,40 @@ form textarea{
 }
 
 
-
-
-@media (max-width:600px){
+@media (max-width:900px){
     #contact{
         width: 100%;
-        height: 170vh;
-        /* background-color: darkgoldenrod; */
-
+        height: 110vh;
     }
     .contact-container{
-        width: 80%;
-        height: 150vh;
+        width: 90%;
+        height: 90vh;
         margin: 0 auto;
-        /* background-color: rgb(11, 184, 103); */
-        flex-direction: column;
+        display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
     }
     .image-div{
-        width: 90%;
-        height: 60vh;
+        width: 50%;
+        height: 80vh;
         background-image: url(./img/1.png);
         background-size: 100% 100%;
     }
     .form-div{
-        width: 90%;
+        width: 50%;
         height: 80vh;
-        background-color: white;
     }
     .form{
         width: 90%;
-        height: 80vh;
+        height: 70vh;
         margin: 0 auto;
-        /* background-color: rgb(222, 206, 206); */
     }
     .form h1{
         padding-top: 10px;
-        font-family: 'pacific', cursive;
-        font-size: 20px;
+        padding-top: 10px;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 30px;
     }
     .form h1 span{
         font-size: 25px;
@@ -1023,7 +1339,6 @@ form textarea{
         outline: none;
         border: none;
         border-bottom: 3px solid rgb(87, 85, 85);
-        /* background-color: transparent; */
     }
     form textarea{
         width: 90%;
@@ -1045,7 +1360,7 @@ form textarea{
         font-size: 20px;
     }
     .btn:hover{
-        width: 80%;
+        width: 90%;
         background-color: white;
         color: orangered;
         border: 3px solid orangered;
@@ -1057,10 +1372,91 @@ form textarea{
     }
 }
 
+@media (max-width:600px){
+    #contact{
+        width: 100%;
+        height: 170vh;
 
-
-
-
+    }
+    .contact-container{
+        width: 80%;
+        height: 150vh;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .image-div{
+        width: 90%;
+        height: 70vh;
+        background-image: url(./img/1.png);
+        background-size: 100% 100%;
+    }
+    .form-div{
+        width: 95%;
+        height: 80vh;
+        background-color: white;
+    }
+    .form{
+        width: 90%;
+        height: 70vh;
+        margin: 0 auto;
+    }
+    .form h1{
+        text-align: center;
+        padding-top: 10px;
+        padding-top: 10px;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    .form h1 span{
+        font-size: 25px;
+    }
+    form label{
+        font-size: 20px;
+        color: grey;
+        padding-top: 10px;
+    }
+    form input{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-bottom: 3px solid rgb(87, 85, 85);
+    }
+    form textarea{
+        width: 100%;
+        height: 15vh;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-bottom: 3px solid rgb(87, 85, 85);
+    }
+    .btn{
+        width: 100%;
+        background-color: orangered;
+        border: 3px solid orangered;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 15px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .btn:hover{
+        width: 100%;
+        background-color: white;
+        color: orangered;
+        border: 3px solid orangered;
+        outline: none;
+        padding: 15px;
+        margin-top: 10px;
+        transition: 0.5s;
+    
+    }
+}
 
 
 
@@ -1088,15 +1484,45 @@ footer{
 }
 .footer-div1 p span{
     color: orangered;
-    font-family: 'pacific', cursive;
+    font-family:'Times New Roman', Times, serif;
+    
     font-size: 20px;
 }
 .footer-icon{
     width: 100%;
     height: 10vh;
-    /* background-color: gainsboro; */
     display: flex;
     border-radius: 100px;
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width:900px){
+    footer{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-div1{
+        width: 50%;
+        height: 30vh;
+    }
+}
+@media (max-width:600px){
+    footer{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-div1{
+        width: 60%;
+        height: 30vh;
+    }
+}
+

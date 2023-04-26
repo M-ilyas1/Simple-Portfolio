@@ -29,7 +29,7 @@
     color: black;
 }
 .header-menu ul li a:hover{
-    color: gray;
+    color: orangered;
 }
 .header-logo{
     width: 10%;
@@ -55,7 +55,7 @@ a i{
 }
 a i:hover{
     font-size: 27px;
-    color: gray;
+    color: orangered;
 }
 
 
@@ -112,13 +112,12 @@ a i:hover{
 @media (max-width:600px) {
     .head{
         width: 100%;
-        height: 50vh;
+        height: 55vh;
         display: inline-block;
     }
     .header-menu{
         width: 100%;
-        height: 50vh;
-        background-color: white;
+        height: 55vh;
     }
     .header-menu ul{
         list-style: none;
@@ -126,7 +125,6 @@ a i:hover{
     }
     .header-menu ul li{
         padding: 20px;
-        font-family: 'pacific', cursive;
         font-weight: bold;
     
     }
@@ -135,9 +133,8 @@ a i:hover{
         font-size: 20px;
         color: black;
     }
-    .header-menu ul li a:hover{
-        /* text-decoration: none; */
-        color: black;
+       .header-menu ul li a:hover{
+        color: orangered;
     }
     .header-logo{
         width: 15%;
@@ -164,7 +161,7 @@ a i:hover{
     }
     .header-icons a i:hover{
         font-size: 27px;
-        color: gray;
+        color: orangered;
     }
 }
 
@@ -186,10 +183,7 @@ a i:hover{
     .header-menu ul li{
         padding-left: 5px;
         padding-top: 5px;
-        font-family: 'pacific', cursive;
-    
-    }
-    
+    }    
     .header-logo{
         display: none;
     }
@@ -223,15 +217,13 @@ a i:hover{
     padding-top: 30px;
     font-family:'Times New Roman', Times, serif;
     font-size: 45px;
-    color: rgb(77, 75, 75);
-    /* text-shadow: 2px 2px 1px #000; */
+    color: rgb(10, 9, 9);
 }
-span{
-    color: orangered;
+/* span{
     padding-top: 30px;
     font-size: 40px;
     font-family:'Times New Roman', Times, serif;
-}
+} */
 
 @media (max-width: 900px){
     #heading-container{
@@ -403,9 +395,9 @@ span{
     text-align: right;
 }
 .content-right p{
-    color: rgb(87, 84, 84);
+    color: rgb(20, 18, 18);
     padding-right: 10px;
-    font-size: 40px;
+    font-size: 45px;
     text-align: right;
     font-family:'Times New Roman', Times, serif;
 
@@ -482,8 +474,7 @@ span{
     .content-right p{
         padding-right: 10px;
         font-size: 40px;
-        color: rgb(87, 84, 84);
-
+        color: rgb(20, 18, 18);
     }
 }
 
@@ -527,7 +518,7 @@ span{
     }
     .box2{
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -560,7 +551,6 @@ span{
     .content-right p{
         padding-right: 10px;
         font-size: 40px;
-        font-family: 'pacific', cursive;
         text-align: center;
 
     }
@@ -657,15 +647,12 @@ span{
     text-align: center;
     padding-top: 30px;
     font-size: 50px;
-    color: rgb(77, 75, 75);
     font-family:'Times New Roman', Times, serif;
-
 }
 .skills-bars{
     width: 80%;
     height: 70vh;
     margin: 0% auto;
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -697,7 +684,6 @@ span{
 }
 .container .card:before
 {
-  content:'';
   position:absolute;
   top:0;
   left:-50%;
@@ -783,16 +769,15 @@ svg circle
   stroke-linecap:round;
   transform:translate(5px,5px);
 }
-svg circle:nth-child(2)
+svg circle
 {
-  stroke-dasharray:440;
-  stroke-dashoffset:440;
+  stroke-dasharray:430;
+  stroke-dashoffset:430;
 }
-.card:nth-child(1) svg circle:nth-child(2)
+.card svg circle
 {
   stroke-dashoffset:calc(440 - (440 * 90) / 100);
   stroke: orangered;
-
 }
 
 @media (max-width: 900px){
@@ -839,109 +824,7 @@ svg circle:nth-child(2)
       overflow:hidden;
       transition:0.5s;
     }
-    .container .card:hover
-    {
-      transform:translateY(-10px);
-      box-shadow:0 15px 35px rgba(0,0,0,.5);
-    }
-    .container .card:before
-    {
-      content:'';
-      position:absolute;
-      top:0;
-      left:-50%;
-      width:100%;
-      height:100%;
-      background:rgba(255,255,255,.03);
-      pointer-events:none;
-      z-index:1;
-    }
-    .percent
-    {
-      position:relative;
-      width:150px;
-      height:150px;
-      border-radius:50%;
-      box-shadow: inset 0 0 50px #000;
-      background:#222;
-      z-index:1000;
-    }
-    .percent .num
-    {
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      border-radius:50%;
-    }
-    .percent .num h2
-    {
-      color:#777;
-      font-weight:700;
-      font-size:40px;
-      transition:0.5s;
-    }
-    .card:hover .percent .num h2
-    {
-      color:#fff;
-      font-size:60px;
-    }
-    .percent .num h2 span
-    {
-      color:#777;
-      font-size:24px;
-      transition:0.5s;
-    }
-    .card:hover .percent .num h2 span
-    {
-      color:#fff;
-    }
-    .text
-    {
-      position:relative;
-      color:#777;
-      margin-top:20px;
-      font-weight:700;
-      font-size:18px;
-      letter-spacing:1px;
-      text-transform:uppercase;
-      transition:0.5s;
-    }
-    .card:hover .text
-    {
-      color:#fff;
-    }
-    svg
-    {
-      position:relative;
-      width:150px;
-      height:150px;
-      z-index:1000;
-    }
-    svg circle
-    {
-      width:100%;
-      height:100%;
-      fill:none;
-      stroke:#191919;
-      stroke-width:10;
-      stroke-linecap:round;
-      transform:translate(5px,5px);
-    }
-    svg circle:nth-child(2)
-    {
-      stroke-dasharray:440;
-      stroke-dashoffset:440;
-    }
-    .card:nth-child(1) svg circle:nth-child(2)
-    {
-      stroke-dashoffset:calc(440 - (440 * 90) / 100);
-      stroke: orangered;
-    }
+    
 }
 
 @media (max-width:600px){
@@ -975,7 +858,7 @@ svg circle:nth-child(2)
     }
     .container
     {
-      width: 90%;
+      width: 80%;
       display:flex;
       justify-content:space-around;
       margin-top: 10px;
@@ -993,116 +876,13 @@ svg circle:nth-child(2)
       overflow:hidden;
       transition:0.5s;
     }
-    .container .card:hover
-    {
-      transform:translateY(-10px);
-      box-shadow:0 15px 35px rgba(0,0,0,.5);
-    }
-    .container .card:before
-    {
-      content:'';
-      position:absolute;
-      top:0;
-      left:-50%;
-      width:100%;
-      height:100%;
-      background:rgba(255,255,255,.03);
-      pointer-events:none;
-      z-index:1;
-    }
-    .percent
-    {
-      position:relative;
-      width:150px;
-      height:150px;
-      border-radius:50%;
-      box-shadow: inset 0 0 50px #000;
-      background:#222;
-      z-index:1000;
-    }
-    .percent .num
-    {
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      border-radius:50%;
-    }
-    .percent .num h2
-    {
-      color:#777;
-      font-weight:700;
-      font-size:40px;
-      transition:0.5s;
-    }
-    .card:hover .percent .num h2
-    {
-      color:#fff;
-      font-size:60px;
-    }
-    .percent .num h2 span
-    {
-      color:#777;
-      font-size:24px;
-      transition:0.5s;
-    }
-    .card:hover .percent .num h2 span
-    {
-      color:#fff;
-    }
-    .text
-    {
-      position:relative;
-      color:#777;
-      margin-top:20px;
-      font-weight:700;
-      font-size:18px;
-      letter-spacing:1px;
-      text-transform:uppercase;
-      transition:0.5s;
-    }
-    .card:hover .text
-    {
-      color:#fff;
-    }
-    svg
-    {
-      position:relative;
-      width:150px;
-      height:150px;
-      z-index:1000;
-    }
-    svg circle
-    {
-      width:100%;
-      height:100%;
-      fill:none;
-      stroke:#191919;
-      stroke-width:10;
-      stroke-linecap:round;
-      transform:translate(5px,5px);
-    }
-    svg circle:nth-child(2)
-    {
-      stroke-dasharray:440;
-      stroke-dashoffset:440;
-    }
-    .card:nth-child(1) svg circle:nth-child(2)
-    {
-      stroke-dashoffset:calc(440 - (440 * 90) / 100);
-      stroke: orangered;
-    }
 }
 
 
 @media (max-width:300px){
     #Skills{
         width: 100%;
-        height: 220vh;        
+        height: 170vh;        
     }
     .skills-heading{
         width: 90%;
@@ -1118,7 +898,7 @@ svg circle:nth-child(2)
     }
     .skills-bars{
         width: 90%;
-        height: 200vh;
+        height: 150vh;
         margin: 0% auto;
         flex-direction:column;
         justify-content: space-between;
@@ -1130,6 +910,18 @@ svg circle:nth-child(2)
       display:flex;
       justify-content:space-around;
       margin-top: 10px;
+    }
+    .container .card
+    {
+      width: 90%;
+      height: 300px;
+      background:linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+      justify-content:center;
+      align-items:center;
+      border-radius:4px;
+      text-align:center;
+      overflow:hidden;
+      transition:0.5s;
     }
  }
 
@@ -1291,18 +1083,18 @@ svg circle:nth-child(2)
 @media (max-width:600px){
     #Servies{
         width: 100%;
-        height: 260vh;
+        height: 270vh;
     }
     .Servies-container{
         width: 90%;
-        height: 240vh;
+        height: 250vh;
         margin: 0 auto;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
     .servies-box-1{
-        width: 80%;
+        width: 70%;
         height: 70vh;
         background: linear-gradient(to right , #222 0%, #222 50%,
         rgb(29,29,29) 50%,   rgb(23, 22, 22) 100%);
